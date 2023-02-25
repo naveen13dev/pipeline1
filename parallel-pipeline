@@ -12,7 +12,7 @@ pipeline{
                 stage ('build-2'){
                     agent{label 'node2'}
                     steps{
-                        echo "this is parallel build-2"
+                        echo "this is parallel build-02"
                     }
                 }
             }
