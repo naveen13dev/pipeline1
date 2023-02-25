@@ -3,13 +3,13 @@ pipeline{
     stages{
         stage ('parallel build') {
             parallel{
-                stage ('biuld-1'){
+                stage ('build-1'){
                     agent{label 'node1'}
                     steps{
                         echo "this is parallel build-1"
                     }
                 }
-                stage ('biuld-2'){
+                stage ('build-2'){
                     agent{label 'node2'}
                     steps{
                         echo "this is parallel build-2"
