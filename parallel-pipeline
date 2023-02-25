@@ -22,12 +22,12 @@ pipeline{
             parallel{
                 stage ('test-1'){
                     steps{
-                        echo "this is parallel test-1"
+                        echo "this is parallel deploy-1"
                     }
                 }
                 stage ('test-2'){
                     steps{
-                        echo "this is parallel test-2"
+                        echo "this is parallel deploy-2"
                     }
                 }
             }
