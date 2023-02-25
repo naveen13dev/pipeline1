@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage ('BUILD'){
+            agent {label 'node1'}
+            steps{
+                sh '''
+                echo "this stage  is build"
+                ''' 
+            }    
+        }
+        stage ( 'DEPLOY'){
+            steps{
+                sh '''
+                echo "this is DEPLOY stage"
+                '''
+            }
+        }
+    }
+}
