@@ -6,7 +6,7 @@ pipeline{
                 stage ('build-1'){
                     agent{label 'node1'}
                     steps{
-                        echo "this is parallel build-01"
+                        echo "this is parallel build and 01"
                     }
                 }
                 stage ('build-2'){
